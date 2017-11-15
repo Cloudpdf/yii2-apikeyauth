@@ -1,0 +1,44 @@
+{
+    "name": "cloudpdf/yii2-apikeyauth",
+    "type": "library",
+    "description": "ApiKey Auth Filter",
+    "keywords": [
+        "yii2",
+        "api",
+        "key",
+        "auth",
+        "filter"
+    ],
+    "authors": [
+        {
+            "name": "Tamas Szekeres",
+            "email": "szektam2@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5",
+        "guzzlehttp/guzzle": "^6.2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cloudpdf\\filters\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "cloudpdf\\filters\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
